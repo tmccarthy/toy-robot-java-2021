@@ -50,5 +50,46 @@ class CompassDirectionTest {
         assertEquals(expected, translated);
     }
 
+    @Test
+    void rotateNorthLeft() {
+        assertEquals(CompassDirection.WEST, CompassDirection.NORTH.left());
+    }
+
+    @Test
+    void rotateSouthLeft() {
+        assertEquals(CompassDirection.EAST, CompassDirection.SOUTH.left());
+    }
+
+    @Test
+    void rotateEastLeft() {
+        assertEquals(CompassDirection.NORTH, CompassDirection.EAST.left());
+    }
+
+    @Test
+    void rotateWestLeft() {
+        assertEquals(CompassDirection.SOUTH, CompassDirection.WEST.left());
+    }
+
+    @Test
+    void rotateNorthRight() {
+        assertEquals(CompassDirection.EAST, CompassDirection.NORTH.right());
+    }
+
+    @Test
+    void rotateSouthRight() {
+        assertEquals(CompassDirection.WEST, CompassDirection.SOUTH.right());
+    }
+
+    @Test
+    void rotateEastRight() {
+        assertEquals(CompassDirection.SOUTH, CompassDirection.EAST.right());
+    }
+
+    @Test
+    void rotateWestRight() {
+        assertEquals(CompassDirection.NORTH, CompassDirection.WEST.right());
+    }
+
+
 
 }
