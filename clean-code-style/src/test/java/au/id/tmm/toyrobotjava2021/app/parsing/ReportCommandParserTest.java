@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ReportCommandParserTest {
 
-    private final ReportCommandParser parserUnderTest = new ReportCommandParser();
+    private final ReportCommandParser parserUnderTest = ReportCommandParser.create();
 
     @Test
     void parseReport() throws Exception {
