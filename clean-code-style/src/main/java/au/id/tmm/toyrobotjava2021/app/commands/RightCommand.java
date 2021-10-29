@@ -7,8 +7,9 @@ public enum RightCommand implements Command {
 
     @Override
     public void runOn(Board board) {
-        // TODO unimplemented
-        throw new UnsupportedOperationException();
+        if (board.getRobot() != null) {
+            board.getRobot().setDirection(board.getRobot().getDirection().right());
+        }
     }
 
 }
