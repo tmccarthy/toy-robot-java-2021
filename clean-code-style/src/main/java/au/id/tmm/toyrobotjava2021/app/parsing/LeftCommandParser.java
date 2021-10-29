@@ -8,7 +8,7 @@ public class LeftCommandParser extends SingletonCommandParser {
         return new LeftCommandParser();
     }
 
-    private LeftCommandParser() {
+    protected LeftCommandParser() {
         super("LEFT", LeftCommand.INSTANCE);
     }
 }
