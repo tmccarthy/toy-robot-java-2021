@@ -1,5 +1,7 @@
-package au.id.tmm.toyrobotjava2021.app;
+package au.id.tmm.toyrobotjava2021.app.geometry;
 
+import au.id.tmm.toyrobotjava2021.app.geometry.CompassDirection;
+import au.id.tmm.toyrobotjava2021.app.geometry.Position;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

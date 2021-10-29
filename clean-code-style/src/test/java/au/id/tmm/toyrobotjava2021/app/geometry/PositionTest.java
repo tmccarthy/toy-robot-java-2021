@@ -1,8 +1,8 @@
-package au.id.tmm.toyrobotjava2021.app;
+package au.id.tmm.toyrobotjava2021.app.geometry;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PositionTest {
 

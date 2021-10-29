@@ -1,4 +1,4 @@
-package au.id.tmm.toyrobotjava2021.app;
+package au.id.tmm.toyrobotjava2021.app.geometry;
 
 import java.util.Objects;
 
