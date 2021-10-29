@@ -1,6 +1,7 @@
 package au.id.tmm.toyrobotjava2021.app.commands;
 
 import au.id.tmm.toyrobotjava2021.app.Board;
+import au.id.tmm.toyrobotjava2021.app.Robot;
 import au.id.tmm.toyrobotjava2021.app.geometry.CompassDirection;
 import au.id.tmm.toyrobotjava2021.app.geometry.Position;
 
@@ -22,8 +23,9 @@ public class PlaceCommand implements Command {
 
     @Override
     public void runOn(Board board) {
-        // TODO unimplemented
-        throw new UnsupportedOperationException();
+        if (board.isOnBoard(position)) {
+            board.setRobot(Robot.create(position, direction));
+        }
     }
 
     @Override
