@@ -6,6 +6,9 @@ dependencies {
 }
 
 application {
-    // Define the main class for the application.
-    mainClass.set("au.id.tmm.toyrobotjava2021.app.App")
+    mainClass.set("au.id.tmm.toyrobotjava2021.app.Main")
+}
+
+tasks.getByName<JavaExec>("run") {
+    standardInput = System.`in`
 }
